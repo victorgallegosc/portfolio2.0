@@ -1,0 +1,50 @@
+@media (max-width: 767px) {
+    #intro {
+        height: 400px;
+        width: 80%;
+    }
+    #profile {
+        height: 150px;
+    }
+    #intro p {
+        text-align: center;
+    }
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    width: 100%;
+}
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.social-pack {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 270px;
+}
+#email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--accent);
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+    height: 26px;
+}
+#email img {
+    margin-left: -1px;
+}
+#email p {
+    color: var(--primary);
+    font-size: 12px;
+    margin-top: -1px;
+}

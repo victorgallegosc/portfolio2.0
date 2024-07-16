@@ -65,6 +65,10 @@ a {
 /* --- Generic --- */
 /* Margins */
 .no-mg {margin: 0;}
+.mg-top-0 {margin-top: 0px;}
+.mg-bottom-0 {margin-bottom: 0px;}
+.mg-left-0 {margin-left: 0px;}
+.mg-right-0 {margin-right: 0px;}
 .mg-top-5 {margin-top: 5px;}
 .mg-bottom-5 {margin-bottom: 5px;}
 .mg-left-5 {margin-left: 5px;}
