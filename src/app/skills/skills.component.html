@@ -1,0 +1,24 @@
+<section id="skills-section">
+    <div class="container">
+        <p class="title title-regular">Skills</p>
+        <div class="skills-div">
+            <div *ngFor="let skill of skills" class="skill">
+                <p class="text-regular no-mg">{{skill}}</p>
+            </div>
+        </div>
+
+        <p class="title text-regular">What I'm learning...</p>
+        <div class="skills-div">
+            <div *ngFor="let skill of learningSkills" class="skill">
+                <p class="text-regular no-mg">{{skill}}</p>
+            </div>
+        </div>
+
+        <p class="title text-regular">I'm also familiar with...</p>
+        <div class="skills-div">
+            <div *ngFor="let skill of familiarSkills" class="skill">
+                <p class="text-regular no-mg">{{skill}}</p>
+            </div>
+        </div>
+    </div>
+</section>

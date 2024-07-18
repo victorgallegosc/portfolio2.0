@@ -9,7 +9,7 @@ body {
 :root {
     --primary: #783ADD;
     --secondary: #BB37D6;
-    --accent: #783add1a;
+    --accent: #eee4fd;
 
     --accentbg: #7037cb32;
 }
@@ -184,4 +184,16 @@ a {
     background: linear-gradient(to right, #783add 20%, #bb37d6 65%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.skill {
+    border: 1px solid var(--primary);
+    background-color: var(--accent);
+    border-radius: 50px;
+    padding: 6px 15px;
+    margin: 4px 5px;
+    width: fit-content;
+}
+.skill p {
+    color: var(--primary);
+    font-size: 12px;
 }
