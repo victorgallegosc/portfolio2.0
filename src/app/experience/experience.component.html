@@ -1,0 +1,37 @@
+<section id="experience-section">
+  <div class="container">
+    <p class="title title-regular">Experience</p>
+    <div class="jobs mg-bottom-10">
+      <div class="job" *ngFor="let job of importantJobs">
+        <div>
+          <h3 class="text-bold no-mg">{{job.title}}</h3>
+        </div>
+        <div class="item-properties">
+          <div class="current-property" *ngIf="job.current">
+            <img src="icons/green-dot.png" />
+            <p class="text-regular">Current</p>
+          </div>
+          <div class="start-date-property">
+            <img src="icons/since-date.png" />
+            <p class="text-regular">
+              {{ job.initDate.month }} {{ job.initDate.year }}
+            </p>
+          </div>
+          <div
+            class="end-date-property"
+            *ngIf="job.endDate.month && job.endDate.year"
+          >
+            <p class="text-regular">
+              to {{ job.endDate.month }} {{ job.endDate.year }}
+            </p>
+          </div>
+          <div class="place-property">
+            <img src="icons/place.png" />
+            <p class="text-regular">{{ job.place }}</p>
+          </div>
+        </div>
+        <p class="text-regular no-mg">{{ job.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>

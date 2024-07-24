@@ -1,39 +1,39 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 :root {
-    --primary: #783ADD;
-    --secondary: #BB37D6;
-    --accent: #eee4fd;
+  --primary: #783add;
+  --secondary: #bb37d6;
+  --accent: #eee4fd;
 
-    --accentbg: #7037cb32;
+  --active: #4e9154;
 }
 
 button {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-  
-    border-radius: 30px;
-    border: solid;
-    border-width: 2px;
-  
-    font-size: 12px;
-    height: 26px;
-    padding: 0px 30px;
-  
-    cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+
+  border-radius: 30px;
+  border: solid;
+  border-width: 2px;
+
+  font-size: 12px;
+  height: 26px;
+  padding: 0px 30px;
+
+  cursor: pointer;
 }
 
 a {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 .primary-button {
@@ -54,25 +54,25 @@ a {
 }
 
 .button-combined {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: var(--accent);
-    border: 1px solid var(--primary);
-    border-radius: 20px;
-    height: fit-content;
-    width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--accent);
+  border: 1px solid var(--primary);
+  border-radius: 20px;
+  height: fit-content;
+  width: fit-content;
 }
 .button-combined img {
-    height: 26px;
-    margin-left: -1px;
+  height: 26px;
+  margin-left: -1px;
 }
 .button-combined p {
-    color: var(--primary);
-    font-size: 12px;
-    margin-top: -1px;
-    margin-bottom: 0px;
-    padding: 0px 10px 0px 5px;
+  color: var(--primary);
+  font-size: 12px;
+  margin-top: -1px;
+  margin-bottom: 0px;
+  padding: 0px 10px 0px 5px;
 }
 
 .pointer {
@@ -80,120 +80,231 @@ a {
 }
 
 @media (max-width: 839px) {
-    .title {
-        font-size: 20px;
-    }
+  .title {
+    font-size: 20px;
+  }
 }
 
 /* --- Generic --- */
 /* Margins */
-.no-mg {margin: 0;}
-.mg-top-0 {margin-top: 0px;}
-.mg-bottom-0 {margin-bottom: 0px;}
-.mg-left-0 {margin-left: 0px;}
-.mg-right-0 {margin-right: 0px;}
-.mg-top-5 {margin-top: 5px;}
-.mg-bottom-5 {margin-bottom: 5px;}
-.mg-left-5 {margin-left: 5px;}
-.mg-right-5 {margin-right: 5px;}
-.mg-top-10 {margin-top: 10px;}
-.mg-bottom-10 {margin-bottom: 10px;}
-.mg-left-10 {margin-left: 10px;}
-.mg-right-10 {margin-right: 10px;}
-.mg-top-15 {margin-top: 15px;}
-.mg-bottom-15 {margin-bottom: 15px;}
-.mg-left-15 {margin-left: 15px;}
-.mg-right-15 {margin-right: 15px;}
-.mg-top-20 {margin-top: 20px;}
-.mg-bottom-20 {margin-bottom: 20px;}
-.mg-left-20 {margin-left: 20px;}
-.mg-right-20 {margin-right: 20px;}
+.no-mg {
+  margin: 0;
+}
+.mg-top-0 {
+  margin-top: 0px;
+}
+.mg-bottom-0 {
+  margin-bottom: 0px;
+}
+.mg-left-0 {
+  margin-left: 0px;
+}
+.mg-right-0 {
+  margin-right: 0px;
+}
+.mg-top-5 {
+  margin-top: 5px;
+}
+.mg-bottom-5 {
+  margin-bottom: 5px;
+}
+.mg-left-5 {
+  margin-left: 5px;
+}
+.mg-right-5 {
+  margin-right: 5px;
+}
+.mg-top-10 {
+  margin-top: 10px;
+}
+.mg-bottom-10 {
+  margin-bottom: 10px;
+}
+.mg-left-10 {
+  margin-left: 10px;
+}
+.mg-right-10 {
+  margin-right: 10px;
+}
+.mg-top-15 {
+  margin-top: 15px;
+}
+.mg-bottom-15 {
+  margin-bottom: 15px;
+}
+.mg-left-15 {
+  margin-left: 15px;
+}
+.mg-right-15 {
+  margin-right: 15px;
+}
+.mg-top-20 {
+  margin-top: 20px;
+}
+.mg-bottom-20 {
+  margin-bottom: 20px;
+}
+.mg-left-20 {
+  margin-left: 20px;
+}
+.mg-right-20 {
+  margin-right: 20px;
+}
 
 /* Paddings */
-.no-pd {padding: 0;}
-.pd-top-5 {padding-top: 5px;}
-.pd-bottom-5 {padding-bottom: 5px;}
-.pd-left-5 {padding-left: 5px;}
-.pd-right-5 {padding-right: 5px;}
-.pd-top-10 {padding-top: 10px;}
-.pd-bottom-10 {padding-bottom: 10px;}
-.pd-left-10 {padding-left: 10px;}
-.pd-right-10 {padding-right: 10px;}
-.pd-top-15 {padding-top: 15px;}
-.pd-bottom-15 {padding-bottom: 15px;}
-.pd-left-15 {padding-left: 15px;}
-.pd-right-15 {padding-right: 15px;}
-.pd-top-20 {padding-top: 20px;}
-.pd-bottom-20 {padding-bottom: 20px;}
-.pd-left-20 {padding-left: 20px;}
-.pd-right-20 {padding-right: 20px;}
+.no-pd {
+  padding: 0;
+}
+.pd-top-5 {
+  padding-top: 5px;
+}
+.pd-bottom-5 {
+  padding-bottom: 5px;
+}
+.pd-left-5 {
+  padding-left: 5px;
+}
+.pd-right-5 {
+  padding-right: 5px;
+}
+.pd-top-10 {
+  padding-top: 10px;
+}
+.pd-bottom-10 {
+  padding-bottom: 10px;
+}
+.pd-left-10 {
+  padding-left: 10px;
+}
+.pd-right-10 {
+  padding-right: 10px;
+}
+.pd-top-15 {
+  padding-top: 15px;
+}
+.pd-bottom-15 {
+  padding-bottom: 15px;
+}
+.pd-left-15 {
+  padding-left: 15px;
+}
+.pd-right-15 {
+  padding-right: 15px;
+}
+.pd-top-20 {
+  padding-top: 20px;
+}
+.pd-bottom-20 {
+  padding-bottom: 20px;
+}
+.pd-left-20 {
+  padding-left: 20px;
+}
+.pd-right-20 {
+  padding-right: 20px;
+}
 
 /* Other */
 
 /* --- Fonts --- */
 .logo-regular {
-    font-family: "Oleo Script", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40px;
+  font-family: "Oleo Script", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
 
-    background: #783add;
-    background: linear-gradient(to right, #783add 20%, #bb37d6 65%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
+  background: #783add;
+  background: linear-gradient(to right, #783add 20%, #bb37d6 65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .title-regular {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 
-    color: black;
+  color: black;
 }
 .tab-regular {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 
-    color: black;
+  color: black;
 }
 .text-regular {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 
-    color: black;
+  color: black;
 }
 .text-bold {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 
-    color: black;
+  color: black;
 }
 .gradient-text {
-    background: #783add;
-    background: linear-gradient(to right, #783add 20%, #bb37d6 65%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: #783add;
+  background: linear-gradient(to right, #783add 20%, #bb37d6 65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .skill {
-    border: 1px solid var(--primary);
-    background-color: var(--accent);
-    border-radius: 50px;
-    padding: 6px 15px;
-    margin: 4px 5px;
-    width: fit-content;
+  border: 1px solid var(--primary);
+  background-color: var(--accent);
+  border-radius: 50px;
+  padding: 6px 15px;
+  margin: 4px 5px;
+  width: fit-content;
 }
 .skill p {
-    color: var(--primary);
-    font-size: 12px;
+  color: var(--primary);
+  font-size: 12px;
+}
+.current-property,
+.start-date-property,
+.end-date-property,
+.place-property {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 5px;
+  justify-content: center;
+  border: none;
+  border-radius: 20px;
+  height: fit-content;
+  padding: 5px 10px;
+  width: fit-content;
+}
+.current-property p,
+.start-date-property p,
+.end-date-property p,
+.place-property p {
+  color: white;
+  font-size: 11px;
+  margin: 0;
+}
+.current-property img,
+.start-date-property img,
+.place-property img {
+  height: 10px;
+}
+.current-property {
+  background-color: #4e9154;
+}
+.start-date-property,
+.end-date-property,
+.place-property {
+  background-color: var(--secondary);
 }

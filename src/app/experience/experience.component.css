@@ -1,0 +1,35 @@
+@media (max-width: 767px) {
+    .container {
+        width: 90%;
+    }
+}
+#experience-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jobs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.job {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    background-color: var(--accent);
+    border-radius: 20px;
+    height: fit-content;
+    padding: 20px;
+}
+.job p {
+    text-align: justify;
+    font-size: 14px;
+}
+.item-properties {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 8px;
+    column-gap: 8px;
+}
