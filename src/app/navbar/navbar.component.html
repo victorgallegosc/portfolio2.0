@@ -1,18 +1,18 @@
 <nav>
     <div class="container expanded-nav">
-        <p class="title logo-regular no-mg">VG</p>
+        <a class="title logo-regular no-mg" (click)="scrollTo('home')">VG</a>
         <div class="tabs">
             <div>
-                <a class="tab tab-regular pointer">HOME</a>
+                <a class="tab tab-regular pointer" (click)="scrollTo('home')">HOME</a>
             </div>
             <div>
-                <a class="tab tab-regular pointer">ABOUT</a>
+                <a class="tab tab-regular pointer"  (click)="scrollTo('about')">ABOUT</a>
             </div>
             <div>
-                <a class="tab tab-regular pointer">PROJECTS</a>
+                <a class="tab tab-regular pointer" (click)="scrollTo('projects')">PROJECTS</a>
             </div>
             <div>
-                <a class="tab-regular pointer">CONTACT</a>
+                <a class="tab-regular pointer" (click)="scrollTo('connect')">CONNECT</a>
             </div>
         </div>
     </div>

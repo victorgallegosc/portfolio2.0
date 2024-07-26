@@ -18,6 +18,9 @@ nav {
     width: 100%;
     z-index: 1;
 }
+nav a {
+    text-decoration: none;
+}
 .container {
     display: flex;
     justify-content: space-around;

@@ -28,4 +28,22 @@ export class NavbarComponent {
       this.hasScrolled = false;
     }
   }
+
+  scrollTo(fragment: string) {
+    const element = document.getElementById(fragment);
+    const tab = element?.getAttribute('id');
+    
+    if (element) {
+      if(tab === 'connect') {
+        const yOffset = -0;
+        const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      } else {
+        const yOffset = -80;
+        const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+      
+    }
+  }
 }
