@@ -1,0 +1,42 @@
+@media (max-width: 767px) {
+    #connect-section {
+        height: 100vh;
+    }
+}
+#connect-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+.social-pack {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 270px;
+}
+#email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--accent);
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+    height: 26px;
+}
+#email img {
+    margin-left: -1px;
+}
+#email p {
+    color: var(--primary);
+    font-size: 12px;
+    margin-top: -1px;
+}
