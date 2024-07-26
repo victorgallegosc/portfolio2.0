@@ -11,6 +11,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { EducationComponent } from './education/education.component';
 import { ConnectComponent } from './connect/connect.component';
+import { PopupComponent } from './popup/popup.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ConnectComponent } from './connect/connect.component';
     ExperienceComponent,
     ProjectsComponent,
     EducationComponent,
-    ConnectComponent
+    ConnectComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,

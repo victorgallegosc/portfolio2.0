@@ -8,12 +8,13 @@
         applications.
         </p>
         <div id="about-buttons">
-            <button class="primary-button mg-right-5">Read more</button>
-            <div class="button-combined mg-left-5">
+            <!-- <button class="primary-button mg-right-5">Read more</button> -->
+            <div class="button-combined" (click)="popup.togglePopup()">
                 <img src="/icons/curriculum-icon.png"/>
                 <p class="text-regular">Resume</p>
             </div>
         </div>
+        <app-popup #popup></app-popup>
         
     </div>
 </section>

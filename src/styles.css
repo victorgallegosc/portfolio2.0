@@ -39,8 +39,8 @@ a {
 }
 .alternative-button {
   background-color: white;
-  border-color: var(--accent);
-  color: var(--accent);
+  border-color: var(--primary);
+  color: var(--primary);
 }
 .disabled-button {
   background-color: gray;

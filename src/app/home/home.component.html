@@ -9,11 +9,12 @@
     <div class="social-pack">
         <div id="email">
             <img src="/icons/mail-icon.png" height="26px" />
-            <p class="pd-left-5 mg-top-0 mg-bottom-0 text-regular pd-right-10">contact&#64;victorgallegos.com</p>
+            <a class="pd-left-5 mg-top-0 mg-bottom-0 text-regular pd-right-10" href="mailto:contact@victorgallegos.com" target="_blank">contact&#64;victorgallegos.com</a>
         </div>
-        <img src="/icons/linkedin-icon.png" />
-        <img src="/icons/curriculum-icon.png" />
+        <a href="https://www.linkedin.com/in/victorgallegoscaceres" target="_blank"><img src="/icons/linkedin-icon.png" /></a>
+        <img src="/icons/curriculum-icon.png" (click)="popup.togglePopup()">
     </div>
   </div>
 </section>
+<app-popup #popup></app-popup>
 <app-about></app-about>

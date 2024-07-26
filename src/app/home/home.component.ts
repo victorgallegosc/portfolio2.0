@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AboutComponent } from '../about/about.component';
+import { PopupComponent } from '../popup/popup.component';
 
 @Component({
   selector: 'app-home',
@@ -7,5 +7,5 @@ import { AboutComponent } from '../about/about.component';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-
+  popup = PopupComponent;
 }

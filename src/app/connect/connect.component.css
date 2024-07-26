@@ -35,8 +35,9 @@
 #email img {
     margin-left: -1px;
 }
-#email p {
+#email a {
     color: var(--primary);
     font-size: 12px;
     margin-top: -1px;
+    text-decoration: none;
 }
