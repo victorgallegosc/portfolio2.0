@@ -9,3 +9,55 @@
     align-items: center;
     justify-content: center;
 }
+.project {
+    background-color: var(--accent);
+    border-radius: 20px;
+    padding: 20px;
+}
+.project-upper-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.project-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 50%;
+}
+.project-img img {
+    height: 50px;
+    border-radius: 50%;
+}
+.repo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+    margin-left: auto;
+    width: fit-content;
+}
+.repo img {
+    height: 26px;
+}
+.repo p {
+    color: var(--primary);
+    font-size: 13px;
+}
+.project-description {
+    text-align: justify;
+}
+.project-skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.skill {
+    background-color: white;
+}

@@ -1,5 +1,31 @@
 <section id="projects-section">
     <div class="container">
         <h1 class="title title-regular">Projects</h1>
+
+        <div class="projects">
+            <div class="project" *ngFor="let project of projects">
+                <div class="project-upper-section">
+                    <div class="project-img">
+                        <img src="img/Profile-skin.webp">
+                    </div>
+                    <div class="project-name-and-link pd-left-10">
+                        <h4 class="title-regular no-mg">{{project.title}}</h4>
+                        <p class="text-regular no-mg" style="color: gray;">{{project.link}}</p>
+                    </div>
+                    <!-- <div class="repo" (click)="goToRepo(project.repo)">
+                        <img src="icons/github.png">
+                        <p class="pd-left-5 pd-right-10 no-mg text-regular">Code</p>
+                    </div> -->
+                </div>
+                <div class="project-description">
+                    <p class="text-regular">{{project.description}}</p>
+                </div>
+                <div class="project-skills">
+                    <div class="skill" *ngFor="let skill of project.skills">
+                        <p class="text-regular no-mg">{{skill}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
